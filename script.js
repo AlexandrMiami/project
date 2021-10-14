@@ -1,26 +1,19 @@
+const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
 
-let number = 4.6;
-
-
-
-const obj = {
-    name: 'John',
-    age: 25,
-    penis: '24 sm'
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
 };
 
-console.log(obj.penis);
+const a = prompt('Один из последних просмотренных фильмов?', ''),
+      b = prompt('На сколько оцените его?', ''),
+      c = prompt('Один из последних просмотренных фильмов?', ''),
+      d = prompt('На сколько оцените его?', '');
 
-const massive = ['BMW', 'AUDI', 'MERS']
-console.log(massive[1]);
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
 
-
-
-const vopros = [];
-vopros[0] = prompt('Какая у вас машина?');
-vopros[1] = prompt('Довольны своей машиной?');
-vopros[2] = prompt('Сколько расход?');
-
-document.write(vopros);
-
-укекуе
+console.log(personalMovieDB);
