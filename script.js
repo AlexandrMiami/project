@@ -22,3 +22,5 @@ vopros[1] = prompt('Довольны своей машиной?');
 vopros[2] = prompt('Сколько расход?');
 
 document.write(vopros);
+
+укекуе
